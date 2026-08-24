@@ -1,3 +1,4 @@
+#include "carslow-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
@@ -57,8 +58,6 @@
     };
 
     physical_layout0: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        display-name = "CarSlow TKL";
         transform = <&default_transform>;
     };
 };
