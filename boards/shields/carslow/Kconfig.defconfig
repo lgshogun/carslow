@@ -1,0 +1,6 @@
+if SHIELD_CARSLOW
+
+config ZMK_KEYBOARD_NAME
+    default "carslow"
+
+endif # SHIELD_CARSLOW
