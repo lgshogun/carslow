@@ -9,14 +9,97 @@
             display-name = "Base";
 
             bindings = <
-                &kp ESC    &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
-                &kp F11    &kp F12    &kp PSCRN    &kp SLCK    &kp PAUSE_BREAK    &kp GRAVE    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5
-                &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS    &kp EQUAL    &kp BSPC    &kp INS    &kp HOME    &kp PG_UP
-                &kp TAB    &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I    &kp O    &kp P
-                &kp LBKT    &kp RBKT    &kp BSLH    &kp DEL    &kp END    &kp PG_DN    &kp CAPS    &kp A    &kp S    &kp D    &kp F
-                &kp G    &kp H    &kp J    &kp K    &kp L    &kp SEMI    &kp SQT    &kp ENTER    &kp LSHFT    &kp Z    &kp X
-                &kp C    &kp V    &kp B    &kp N    &kp M    &kp COMMA    &kp DOT    &kp FSLH    &kp RSHFT    &kp UP    &kp LCTRL
-                &kp LGUI    &kp LALT    &kp SPACE    &kp RALT    &kp RGUI    &kp K_APP    &kp RCTRL    &kp LEFT    &kp DOWN    &kp RIGHT
+                // 00..10
+                &kp ESC     &kp F1      &kp F2      &kp F3      &kp F4
+                &kp F5      &kp F6      &kp F7      &kp F8      &kp F9
+                &kp F10
+
+                // 11..21
+                &kp F11     &kp F12     &kp PSCRN   &kp SLCK    &kp PAUSE_BREAK
+                &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4
+                &kp N5
+
+                // 22..32
+                &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
+                &kp MINUS   &kp EQUAL   &kp BSPC    &kp INS     &kp HOME
+                &kp PG_UP
+
+                // 33..43
+                &kp TAB     &kp Q       &kp W       &kp E       &kp R
+                &kp T       &kp Y       &kp U       &kp I       &kp O
+                &kp P
+
+                // 44..54
+                &kp LBKT    &kp RBKT    &kp BSLH    &kp DEL     &kp END
+                &kp PG_DN   &kp CAPS    &kp A       &kp S       &kp D
+                &kp F
+
+                // 55..65
+                &kp G       &kp H       &kp J       &kp K       &kp L
+                &kp SEMI    &kp SQT     &kp ENTER   &kp LSHFT   &kp Z
+                &kp X
+
+                // 66..76
+                &kp C       &kp V       &kp B       &kp N       &kp M
+                &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT   &kp UP
+                &kp LCTRL
+
+                // 77..86
+                &kp LGUI
+                &kp LALT
+                &kp SPACE
+                &kp RALT
+                &kp RGUI
+                &mo 1 K_APP
+                &kp RCTRL
+                &kp LEFT
+                &kp DOWN
+                &kp RIGHT
+            >;
+        };
+
+        fn_layer {
+            display-name = "Fn";
+
+            bindings = <
+                // 00..10
+                &trans       &trans          &trans &trans &trans
+                &trans       &trans          &trans &trans &trans
+                &trans
+
+                // 11..21
+                &trans       &studio_unlock  &trans &trans &trans
+                &trans       &trans          &trans &trans &trans
+                &trans
+
+                // 22..32
+                &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans
+                &trans
+
+                // 33..43
+                &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans
+                &trans
+
+                // 44..54
+                &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans
+                &trans
+
+                // 55..65
+                &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans
+                &trans
+
+                // 66..76
+                &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans
+                &trans
+
+                // 77..86
+                &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans
             >;
         };
     };
